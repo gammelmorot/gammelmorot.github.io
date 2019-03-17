@@ -1,0 +1,53 @@
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura', sans-serif;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+.section {
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.section-minecraft {
+  background-image: url(src/cross-platform.jpg);
+}
+
+.section-volvo {
+  background-image: url(src/volvo-concept.jpg);
+  color: white;
+
+}
+
+.section-telenor {
+  background-color: blue;
+}
+
+.section-codepub {
+  background-image: url(src/codepub.png);
+  color: white;
+}
+
+.section-netlight {
+  background-color: purple;
+}
+
+.section-title {
+  font-weight: 300;
+}
