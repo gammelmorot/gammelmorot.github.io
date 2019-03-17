@@ -2,9 +2,7 @@ body{
   background-color: white;
   margin: 0;
   padding: 0;
-  font-family: 'Futura', sans-serif;
-  letter-spacing: 1px;
-  font-size: 50px;
+  font-family: 'Muli', sans-serif;
 }
 
 html {
@@ -16,27 +14,168 @@ html {
   max-width: 960px;
   margin: 0 auto;
   padding: 1px;
+  max-width: 80%;
+}
+
+.wrapper-minecraft {
+  max-width: 50%;
+  margin-right: 10%;
+}
+
+.wrapper-telenor {
+  max-width: 456px;
+}
+
+@media (max-width: 570px) {
+
+  .wrapper-telenor {
+    max-width: 80%;
+  }
+}
+
+.wrapper-volvo {
+  max-width: 736px;
+  padding-bottom: 204px;
+}
+
+.wrapper-TCP {
+  /* border-right: 1px solid white; */
+  max-width: 736px;
+  margin-bottom: 7%;
+}
+
+@media (max-width: 918px) {
+
+  .wrapper-TCP {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper-TCP {
+    margin-bottom: 27%;
+  }
+}
+
+.wrapper-nl {
+  max-width: 45%;
+  margin-left: 10%;
+  margin-bottom: 10%;
 }
 
 .section {
   min-height: 80vh;
+  max-width: 1240px;
+  margin: auto;
   background-size: cover;
   background-position: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  cursor: default;
+  /* transition: transform 0.3s ease-out; */
+}
+
+/* .section:hover {
+  transform: scale(1.03);
+} */
+
+@media (min-width: 1240px) {
+  .section {
+    margin-bottom: 40px;
+  }
+}
+
+.section-header {
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 0;
+  min-height: 90vh;
 }
 
 .section-minecraft {
-  background-image: url(src/cross-platform.jpg);
+  background-image: url(src/gameboy-yellow2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10%;
+  background-color: #F3B000;
+  color: #293138;
+  text-align: left;
 }
 
-.section-volvo {
-  background-image: url(src/volvo-concept.jpg);
-  color: white;
+@media (max-width: 1020px) {
+  .section-minecraft {
+    background-image: url(src/gameboy-yellow-bottom.jpg);
+    background-position: top;
+    text-align: center;
+  }
 
+  .wrapper-minecraft {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 27%;
+  }
 }
 
 .section-telenor {
-  background-color: blue;
+  background-image: url(src/phones.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.section-volvo {
+  background-color: black;
+  color: #DBDBDB;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.section-volvo-bg {
+    position: absolute;
+    /* background-image: url(src/clock2.svg); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95%;
+    bottom: -100px;
+    /* opacity: 0.2; */
+}
+
+.section-volvo-bg-left {
+    background-image: url(src/clock2.svg);
+    background-position: left;
+    left: -25%;
+}
+
+.section-volvo-bg-right {
+    background-image: url(src/clock3.svg);
+    background-position: right;
+    right: -25%;
+}
+
+@media (max-width: 918px) {
+  .section-volvo-bg-left {
+    width: 80%;
+    bottom: -40%;
+    background-position: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .section-volvo-bg-right {
+    display: none;
+  }
+
+  .wrapper-volvo {
+    max-width: 80%;
+    padding-bottom: 204px;
+  }
 }
 
 .section-codepub {
@@ -44,10 +183,101 @@ html {
   color: white;
 }
 
-.section-netlight {
-  background-color: purple;
+.section-nl {
+  background-color: #F5F5F5;
+  color: #2C3F6B;
+  background-image: url(src/boids.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 90%;
 }
 
 .section-title {
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.section-title-TCP {
+/* text-align: right;
+margin: 0; */
+}
+
+.section-subtitle {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .section {
+    min-height: 60vh;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+}
+
+.section-subtitle-telenor {
+  font-weight: 300;
+  font-size: 20px;
+  color: black;
+}
+
+.section-text-nl {
+  text-align: left;
+}
+
+@media (max-width: 700px){
+  .section-nl {
+    background-image: url(src/boid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .section-text-nl {
+    text-align: center;
+  }
+
+  .wrapper-nl {
+    max-width: 80%;
+    margin-left: auto;
+    margin-top: 32%;
+  }
+}
+
+.section-description {
+  font-weight: 500;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.section-things {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.section-things-text {
+  margin: 16px;
+  font-weight: 300;
+}
+
+.email-link {
+  text-decoration: none;
+  cursor: default;
+  color: red;
+}
+
+.email-link:hover {
+  color: #FF9E9E;
+}
+
+.the-end {
+  position: relative;
+  bottom: -170px;
+  padding-bottom: 20px;
   font-weight: 300;
 }
