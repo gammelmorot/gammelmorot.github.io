@@ -10,6 +10,16 @@ html {
   padding: 0;
 }
 
+h2 {
+  margin-block-end: 0;
+}
+
+.lily {
+  margin: 4px;
+  font-size: 11px;
+  border-radius: 100px;
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
@@ -24,6 +34,9 @@ html {
 
 .wrapper-telenor {
   max-width: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 570px) {
@@ -36,12 +49,19 @@ html {
 .wrapper-volvo {
   max-width: 736px;
   padding-bottom: 204px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper-TCP {
   /* border-right: 1px solid white; */
   max-width: 736px;
   margin-bottom: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 918px) {
@@ -117,11 +137,14 @@ html {
     margin-right: auto;
     margin-left: auto;
     margin-top: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .section-telenor {
-  background-image: url(src/phones.jpg);
+  background-image: url(src/phones2.jpg);
   background-position: center;
   background-size: cover;
   color: white;
@@ -213,14 +236,16 @@ margin: 0; */
     min-height: 60vh;
   }
 
+  .section-header {
+    min-height: 90vh;
+  }
+
   .section-subtitle {
     font-size: 16px;
   }
 }
 
 .section-subtitle-telenor {
-  font-weight: 300;
-  font-size: 20px;
   color: black;
 }
 
@@ -244,6 +269,9 @@ margin: 0; */
     max-width: 80%;
     margin-left: auto;
     margin-top: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -282,41 +310,47 @@ margin: 0; */
   font-weight: 300;
 }
 
-.section:hover button {
+.section:hover .button {
   visibility: visible;
 }
 
-button {
-  visibility: hidden;
-  border: none;
-  /* border-radius: 4px; */
-  font-size: 16px;
-  font-family: 'Muli', sans-serif;
-  padding: 8px 14px;
-  font-weight: 500;
-  transition: transform 0.3s ease-out;
+.arrow {
+    padding-left: 6px;
+    transition: transform 0.3s ease-out;
 }
 
-button:hover {
-  transform: scale(1.03);
+.button {
+  visibility: hidden;
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: default;
+}
+
+.button:hover .arrow {
+  transform: translate(6px);
 }
 
 .button-minecraft {
-  background-color: #293138;
-  color: white;
-}
-
-.button-minecraft:hover {
-  background-color: #333B42;
+  color: #293138;
 }
 
 .button-telenor {
-  background-color: #2C9495;
-  color: white;
-
+  color: black;
 }
 
-.button-telenor:hover {
-  background-color: #54A4A5;
+.button-volvo {
+  color: #DBDBDB;
+}
 
+.button-TCP {
+  color: white;
+}
+
+.button-nl {
+  color: #2C3F6B;
 }
