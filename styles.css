@@ -281,3 +281,42 @@ margin: 0; */
   padding-bottom: 20px;
   font-weight: 300;
 }
+
+.section:hover button {
+  visibility: visible;
+}
+
+button {
+  visibility: hidden;
+  border: none;
+  /* border-radius: 4px; */
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  padding: 8px 14px;
+  font-weight: 500;
+  transition: transform 0.3s ease-out;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.button-minecraft {
+  background-color: #293138;
+  color: white;
+}
+
+.button-minecraft:hover {
+  background-color: #333B42;
+}
+
+.button-telenor {
+  background-color: #2C9495;
+  color: white;
+
+}
+
+.button-telenor:hover {
+  background-color: #54A4A5;
+
+}
