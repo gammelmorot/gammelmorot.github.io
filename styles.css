@@ -95,12 +95,7 @@ h2 {
   justify-content: center;
   text-decoration: none;
   cursor: default;
-  /* transition: transform 0.3s ease-out; */
 }
-
-/* .section:hover {
-  transform: scale(1.03);
-} */
 
 @media (min-width: 1240px) {
   .section {
@@ -329,6 +324,17 @@ margin: 0; */
   flex-direction: row;
   align-items: center;
   cursor: default;
+}
+
+@media (max-width: 500px){
+  .button {
+    visibility: visible;
+    font-size: 18px;
+  }
+
+  .arrow {
+    padding-left: 8px;
+  }
 }
 
 .button:hover .arrow {
