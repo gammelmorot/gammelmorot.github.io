@@ -28,6 +28,25 @@ h2 {
   max-width: 80%;
 }
 
+.wrapper-header-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .wrapper-header {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 592px) {
+
+  .wrapper-header {
+    max-width: 80%;
+  }
+}
+
 .wrapper-minecraft {
   max-width: 50%;
   margin-right: 10%;
