@@ -367,6 +367,10 @@ h2 {
   .section-description {
     font-size: 16px;
   }
+  
+  .bg-telenor {
+    background-size: 260%;
+  }
 }
 
 .section-things {
