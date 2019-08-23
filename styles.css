@@ -54,6 +54,12 @@ h2 {
   }
 }
 
+.wrapper-epidemic {
+  max-width: 90%;
+  color: #293138;
+  text-align: left;
+}
+
 .wrapper-minecraft {
   max-width: 45%;
   margin-right: 10%;
