@@ -180,6 +180,12 @@ h2 {
   min-height: 90vh;
 }
 
+.bg-epidemic {
+  background-image: url(src/headphones.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-minecraft {
   background-image: url(src/gameboy-yellow2.jpg);
   background-size: contain;
