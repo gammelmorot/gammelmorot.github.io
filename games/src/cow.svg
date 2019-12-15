@@ -1,0 +1,102 @@
+<svg viewBox="0 0 318 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .body-color{fill:#FDF6D4}
+        .spots{fill:#4E361F}
+        .mule{fill:#EBC2C2}
+        .gray{fill:#828282}
+        .pupils{fill:#063557}
+        .white{fill:#fff}
+        .eyelids-color{fill:#E0D497}
+        .eyelashes{stroke:#373332}
+        .mouth-back{fill:#000}
+        .tongue{fill:#BD3A52}
+        .teeth{fill:#FFFDEA}
+        .ears-inner{fill:#F8CFCF}
+    </style>
+    <g class="cow">
+        <g class="ears">
+            <g class="ear-left">
+                <ellipse class="ear-left-outer spots" rx="32.5" ry="42" transform="matrix(0.34202 -0.939693 0.936205 0.351456 50.7253 45.4468)"/>
+                <ellipse class="ear-left-inner ears-inner" rx="22.5" ry="33.5" transform="matrix(0.34202 -0.939693 0.936213 0.351433 48.8582 49.1158)"/>
+            </g>
+            <g class="ear-right">
+                <ellipse class="ear-right-outer body-color" rx="32.5" ry="42" transform="matrix(-0.34202 -0.939693 -0.936205 0.351456 266.782 45.4468)"/>
+                <ellipse class="ear-right-inner ears-inner" rx="22.5" ry="33.5" transform="matrix(-0.34202 -0.939693 -0.936213 0.351433 268.649 49.1158)"/>
+            </g>
+        </g>
+        <g class="horns">
+            <path class="horn-left gray" d="M95.1168 12.5903C95.5642 10.9368 97.7387 10.7272 98.6779 12.1565C103.351 19.268 109.477 25.5818 116.959 30.6176C117.776 31.1675 118.601 31.6965 119.433 32.2048H93.9248C93.0003 25.7259 93.3697 19.0467 95.1168 12.5903Z"/>
+            <path class="horn-right gray" d="M223.883 12.5903C223.436 10.9368 221.261 10.7272 220.322 12.1565C215.649 19.268 209.523 25.5818 202.041 30.6176C201.224 31.1675 200.399 31.6965 199.567 32.2048H225.075C226 25.7259 225.63 19.0467 223.883 12.5903Z"/>
+        </g>
+
+        <g class="head">
+            <path class="body-color" d="M66 106H252L246.38 61.0386C243.878 41.0215 226.862 26 206.689 26H111.311C91.1384 26 74.1223 41.0215 71.6202 61.0386L66 106Z"/>
+            <path class="spot-left spots" d="M139.883 106C148.047 95.0717 153 80.719 153 65C153 50.2225 148.622 36.6524 141.315 26H111.311C91.1384 26 74.1223 41.0215 71.6202 61.0386L66 106H139.883Z"/>
+            <path class="spot-right spots" d="M248.057 74.4523L252 106H228.863C233.196 88.4892 240.258 76.3246 248.057 74.4523Z"/>
+        </g>
+        <g class="eyes">
+            <g class="eyes-shape" clip-path="url(#eyes-clip)">
+                <g class="eye-left">
+                    <path class="eye-left-inner white" d="M94 78.5C94 66.0736 104.074 56 116.5 56V56C128.926 56 139 66.0736 139 78.5V86H94V78.5Z"/>
+                    <circle class="pupil-left pupils" cx="116" cy="71" r="5"/>
+                </g>
+                <g class="eye-right">
+                    <path class="eye-right-inner white" d="M180 78.5C180 66.0736 190.074 56 202.5 56V56C214.926 56 225 66.0736 225 78.5V86H180V78.5Z"/>
+                    <circle class="pupil-right pupils" cx="202" cy="71" r="5"/>
+                </g>
+                <g class="eyelids">
+                    <g class="eyelid-left">
+                        <path class="lid-left eyelids-color" d="M94 51.5C94 39.0736 104.074 29 116.5 29V29C128.926 29 139 39.0736 139 51.5V59H94V51.5Z"/>
+                        <line class="eyeliner-left eyelashes" x1="139" y1="58.5" x2="94" y2="58.5"/>
+                    </g>
+                    <g class="eyelid-right">
+                        <path class="lid-right eyelids-color" d="M225 51.5C225 39.0736 214.926 29 202.5 29V29C190.074 29 180 39.0736 180 51.5V59H225V51.5Z"/>
+                        <line class="eyeliner-right eyelashes" y1="-0.5" x2="45" y2="-0.5" transform="matrix(1 0 0 -1 180 58)"/>
+                    </g>
+                </g>
+            </g>
+            <g class="eyelashes">
+                <g class="eyelashes-left">
+                    <line class="eyelash-left" y1="-0.5" x2="18" y2="-0.5" transform="matrix(1 0 0 -1 196 58)"/>
+                    <path class="eyelash-left" d="M196 58.5C198.209 58.5 200 56.7091 200 54.5"/>
+                    <path class="eyelash-left" d="M207 58.5C210.866 58.5 214 55.366 214 51.5"/>
+                    <path class="eyelash-left" d="M214 58.5C217.314 58.5 220 55.8137 220 52.5"/>
+                    <path class="eyelash-left" d="M201 58.5C204.314 58.5 207 55.8137 207 52.5"/>
+                </g>
+                <g class="eyelashes-right">
+                    <line class="eyelash-right" x1="122" y1="58.5" x2="104" y2="58.5"/>
+                    <path class="eyelash-right" d="M122 58.5C119.791 58.5 118 56.7091 118 54.5"/>
+                    <path class="eyelash-right" d="M111 58.5C107.134 58.5 104 55.366 104 51.5"/>
+                    <path class="eyelash-right" d="M104 58.5C100.686 58.5 98 55.8137 98 52.5"/>
+                    <path class="eyelash-right" d="M117 58.5C113.686 58.5 111 55.8137 111 52.5"/>
+                </g>
+            </g>
+        </g>
+        <g class="cheek">
+            <rect class="mule" x="32" y="86" width="254" height="79" rx="30"/>
+            <g class="nose">
+                <path class="nostril-left gray" d="M121.283 114.772C123.401 118.136 125.18 119.422 127.662 118.757C130.144 118.092 131.041 116.088 131.194 112.117C131.313 109.037 130.731 105.228 129.427 102.297C127.502 97.9673 125.567 96.5423 121.968 97.5068C118.368 98.4712 117.405 100.673 117.903 105.385C118.24 108.575 119.64 112.164 121.283 114.772Z"/>
+                <path class="nostril-right gray" d="M187.078 112.387C187.231 116.359 188.128 118.362 190.61 119.028C193.093 119.693 194.871 118.406 196.989 115.043C198.632 112.435 200.032 108.846 200.369 105.655C200.867 100.943 199.904 98.7416 196.304 97.7772C192.705 96.8127 190.77 98.2377 188.845 102.567C187.542 105.499 186.96 109.307 187.078 112.387Z"/>
+            </g>
+        </g>
+        <g class="mouth-full">
+            <g class="mouth" clip-path="url(#mouth-clip)">
+                <path class="mouth-back" d="M43.3644 175.352C43.1653 169.695 47.6974 165 53.3582 165H264.642C270.303 165 274.835 169.695 274.636 175.352L271.797 256H46.2033L43.3644 175.352Z"/>
+                <ellipse class="tongue" cx="159" cy="255.5" rx="59" ry="15.5"/>
+            </g>
+            <g class="teeth">
+                <path class="tooth-left" d="M118 165H149V172C149 174.209 147.209 176 145 176H122C119.791 176 118 174.209 118 172V165Z"/>
+                <path class="tooth-right" d="M169 165H200V172C200 174.209 198.209 176 196 176H173C170.791 176 169 174.209 169 172V165Z"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <clipPath id="eyes-clip">
+            <path d="M94 78.5C94 66.0736 104.074 56 116.5 56V56C128.926 56 139 66.0736 139 78.5V86H94V78.5Z"/>
+            <path d="M180 78.5C180 66.0736 190.074 56 202.5 56V56C214.926 56 225 66.0736 225 78.5V86H180V78.5Z"/>
+        </clipPath>
+        <clipPath id="mouth-clip">
+            <rect x="32" y="59" width="254" height="106" rx="30"/>
+        </clipPath>
+    </defs>
+</svg>
