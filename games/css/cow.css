@@ -1,0 +1,37 @@
+.body-color {
+  fill: #fdf6d4;
+}
+.spots {
+  fill: #4e361f;
+}
+.mule {
+  fill: #ebc2c2;
+}
+
+.ears-inner {
+  fill: #f8cfcf;
+}
+.gray {
+  fill: #828282;
+}
+.pupils {
+  fill: #063557;
+}
+.white {
+  fill: #fff;
+}
+.eyelids-color {
+  fill: #e0d497;
+}
+.eyelashes {
+  stroke: #373332;
+}
+.mouth-back {
+  fill: #000;
+}
+.tongue {
+  fill: #bd3a52;
+}
+.teeth {
+  fill: #fffdea;
+}

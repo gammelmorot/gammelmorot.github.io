@@ -1,0 +1,81 @@
+<svg viewBox="0 0 254 121" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .body-color{fill:#AFAFAF;}
+        .ear-inner{fill:#EBC2C2;}
+        .nose-inner{fill:#888888;}
+        .freckles{fill:#606060;}
+        .eye-inner{fill:#fff;}
+        .pupil{fill:#063557;}
+        .mouth{fill:#000;}
+        .tongue{fill:#E53A45;}
+        .teeth{fill:#FFFDEA;}
+    </style>
+    <g class="hippo">
+        <g class="nose">
+            <g class="nostril-left">
+                <ellipse class="nose-left-outer body-color" cx="113.5" cy="30.5" rx="7.5" ry="6.5" />
+                <ellipse class="nose-left-inner nose-inner" cx="113.5" cy="30.5" rx="5.5" ry="4.5" />
+            </g>
+            <g class="nostril-right">
+                <ellipse class="nose-right-outer body-color" rx="7.5" ry="6.5" transform="matrix(-1 0 0 1 141.5 30.5)" />
+                <ellipse class="nose-right-inner nose-inner" rx="5.5" ry="4.5" transform="matrix(-1 0 0 1 141.5 30.5)" />
+            </g>
+        </g>
+        <g class="ears">
+            <g class="ear-left">
+                <ellipse class="ear-left-outer body-color" cx="46.5" cy="26" rx="15.5" ry="20" transform="rotate(-16 46.5 26)" />
+                <ellipse class="ear-left-inner ear-inner" cx="48" cy="25" rx="11" ry="16" transform="rotate(-16 48 25)" />
+            </g>
+            <g class="ear-right">
+                <ellipse class="ear-right-outer body-color" rx="15.5" ry="20" transform="matrix(-0.961262 -0.275637 -0.275637 0.961262 208.5 26)" />
+                <ellipse class="ear-right-inner ear-inner" rx="11" ry="16" transform="matrix(-0.961262 -0.275637 -0.275637 0.961262 207 25)" />
+            </g>
+        </g>
+        <g class="eyes">
+            <g class="eye-left">
+                <path class="eye-left-outer body-color" d="M107.841 31H52.1588C52.0538 30.0144 52 29.0135 52 28C52 12.536 64.536 0 80 0C95.464 0 108 12.536 108 28C108 29.0135 107.946 30.0144 107.841 31Z" />
+                <path class="eye-left-inner eye-inner" d="M101.931 31H65.069C65.0233 30.3409 65 29.6738 65 29C65 16.2975 73.2827 6 83.5 6C93.7173 6 102 16.2975 102 29C102 29.6738 101.977 30.3409 101.931 31Z" />
+                <g clip-path="url(#eye-left-clip)">
+                    <circle class="pupil-left pupil" cx="84" cy="19" r="4" />
+                </g>
+            </g>
+            <g class="eye-right">
+                <path class="eye-right-outer body-color" d="M202.841 31H147.159C147.054 30.0144 147 29.0135 147 28C147 12.536 159.536 0 175 0C190.464 0 203 12.536 203 28C203 29.0135 202.946 30.0144 202.841 31Z" />
+                <path class="eye-right-inner eye-inner" d="M189.931 31H153.069C153.023 30.3409 153 29.6738 153 29C153 16.2975 161.283 6 171.5 6C181.717 6 190 16.2975 190 29C190 29.6738 189.977 30.3409 189.931 31Z" />
+                <g clip-path="url(#eye-right-clip)">
+                    <circle class="pupil-right pupil" cx="171" cy="19" r="4" />
+                </g>
+            </g>
+        </g>
+        <rect class="body body-color" y="31" width="254" height="79" rx="26" />
+        <g class="freckles">
+            <circle class="freckle" cx="13.5" cy="46.5" r="1.5" />
+            <circle class="freckle" cx="21.5" cy="42.5" r="1.5" />
+            <circle class="freckle" cx="19.5" cy="48.5" r="1.5" />
+        </g>
+        <g class="mouth" clip-path="url(#mouth-clip)">
+            <g class="mouth-parts">
+                <path class="mouth-back" d="M27.5962 120.563C27.2725 114.828 31.836 110 37.5803 110H216.42C222.164 110 226.728 114.828 226.404 120.563L222.429 191H31.5714L27.5962 120.563Z" />
+                <ellipse class="tongue" clip-path="url(#tongue-clip)" cx="127" cy="195.5" rx="59" ry="15.5" />
+            </g>
+        </g>
+        <g class="teeth">
+            <path class="tooth-left" d="M91 110H122V117C122 119.209 120.209 121 118 121H95C92.7909 121 91 119.209 91 117V110Z" />
+            <path class="tooth-right" d="M132 110H163V117C163 119.209 161.209 121 159 121H136C133.791 121 132 119.209 132 117V110Z" />
+        </g>
+    </g>
+    <defs>
+        <clipPath id="eye-left-clip">
+            <path d="M101.931 31H65.069C65.0233 30.3409 65 29.6738 65 29C65 16.2975 73.2827 6 83.5 6C93.7173 6 102 16.2975 102 29C102 29.6738 101.977 30.3409 101.931 31Z" />
+        </clipPath>
+        <clipPath id="eye-right-clip">
+            <path d="M189.931 31H153.069C153.023 30.3409 153 29.6738 153 29C153 16.2975 161.283 6 171.5 6C181.717 6 190 16.2975 190 29C190 29.6738 189.977 30.3409 189.931 31Z" />
+        </clipPath>
+        <clipPath id="mouth-clip">
+            <rect y="29" width="254" height="81" rx="26" />
+        </clipPath>
+        <clipPath id="tongue-clip">
+            <rect width="118" height="11" fill="white" transform="translate(68 180)"/>
+        </clipPath>
+    </defs>
+</svg>

@@ -1,0 +1,74 @@
+body {
+  background: #c3eabd;
+  cursor: none;
+}
+
+.center-container {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  cursor: none;
+  width: 700px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+button:focus {
+  outline: none;
+}
+
+.fruit {
+  position: absolute;
+}
+
+.yummy {
+  position: absolute;
+  width: 100%;
+}
+
+.fruit-type {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  font-size: 100px;
+  text-transform: capitalize;
+}
+
+/* Fruit */
+
+.carrot {
+  color: #dd8d15;
+}
+
+.apple {
+  color: #ef4c56;
+}
+
+.banana {
+  color: #eec430;
+}
+
+.pear {
+  color: #8bc482;
+}
+
+.melon {
+  color: #ef4c56;
+}
+
+.grapes {
+  color: #533579;
+}
+
+.pineapple {
+  color: #eec430;
+}
+
+.potato {
+  color: #d0bd77;
+}
