@@ -1,15 +1,18 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
-body{
+body {
   background-color: white;
   margin: 0;
   padding: 0;
-  font-family: 'Muli', sans-serif;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
 html {
@@ -21,10 +24,13 @@ h2 {
   margin-bottom: 0;
 }
 
+p {
+  margin: 14px 0;
+}
 .me {
   margin: 4px;
   font-size: 11px;
-  border-radius: 100px;
+  border-radius: 130px;
 }
 
 .wrapper {
@@ -47,16 +53,25 @@ h2 {
 }
 
 @media (max-width: 592px) {
-
   .wrapper-header {
     max-width: 80%;
   }
 }
 
 .wrapper-epidemic {
-  max-width: 90%;
+  max-width: 45%;
+  margin-left: 10%;
   color: #293138;
   text-align: left;
+}
+
+.wrapper-game {
+  color: #ee4e91;
+  /* color: #0b83b7; */
+}
+
+.button-game {
+  color: #ee4e91;
 }
 
 .wrapper-minecraft {
@@ -75,7 +90,6 @@ h2 {
 }
 
 @media (max-width: 570px) {
-
   .wrapper-telenor {
     max-width: 80%;
   }
@@ -99,7 +113,6 @@ h2 {
 }
 
 @media (max-width: 918px) {
-
   .wrapper-TCP {
     max-width: 80%;
   }
@@ -115,7 +128,7 @@ h2 {
   max-width: 45%;
   margin-left: 10%;
   margin-bottom: 10%;
-  color: #2C3F6B;
+  color: #2c3f6b;
   text-align: left;
 }
 
@@ -135,12 +148,18 @@ h2 {
   overflow: hidden;
 }
 
+/* .section-footer {
+  background-image: url(../src/me2.jpg);
+  background-size: 120%;
+  background-position: -20% 0;
+} */
+
 .section-minecraft {
-  background-color: #F3B000;
+  background-color: #f3b000;
 }
 
 .section-nl {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .bg {
@@ -152,12 +171,24 @@ h2 {
   transition: transform 0.3s ease-out;
 }
 
-.bg-volvo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+.cow-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  transition: transform 0.3s ease-out;
+}
+
+.section:hover .cow-container {
+  transform: scale(1.06);
+}
+
+.cow-position {
+  margin-top: 5%;
+  position: relative;
+}
+
+.section-game {
+  background-color: #c3eabd;
 }
 
 .section:hover .bg {
@@ -165,11 +196,11 @@ h2 {
 }
 
 .section:hover .section-volvo-bg-left {
-    transform: translateX(30px);
+  transform: translateX(30px);
 }
 
 .section:hover .section-volvo-bg-right {
-    transform: translateX(-30px);
+  transform: translateX(-30px);
 }
 
 @media (min-width: 1240px) {
@@ -186,25 +217,63 @@ h2 {
 }
 
 .bg-epidemic {
-  background-image: url(src/headphones.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../src/epidemicsound.png);
+  background-size: auto 100%;
+  background-position: right;
+}
+
+@media (max-width: 890px) {
+  .bg-epidemic {
+    background-image: url(../src/epidemicsound-small.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: #fb6f10;
+    bottom: -60%;
+    right: -50%;
+  }
+}
+
+@media (max-width: 760px) {
+  .section-epidemic {
+    justify-content: start;
+  }
+  .wrapper-epidemic {
+    max-width: 80%;
+    padding-top: 12%;
+  }
+}
+
+@media (max-width: 500px) {
+  .bg-epidemic {
+    bottom: -20%;
+    background-size: 450px;
+  }
+  .wrapper-epidemic {
+    max-width: 80%;
+    padding-top: 10%;
+  }
+}
+
+@media (max-width: 370px) {
+  .bg-epidemic {
+    bottom: -50%;
+  }
 }
 
 .bg-minecraft {
-  background-image: url(src/gameboy-yellow2.jpg);
+  background-image: url(../src/gameboy-yellow2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 10%;
 }
 
 .section:hover .bg-minecraft {
-    transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 @media (max-width: 1020px) {
   .bg-minecraft {
-    background-image: url(src/gameboy-yellow-bottom.jpg);
+    background-image: url(../src/gameboy-yellow-bottom.jpg);
     background-position: top;
     top: -20px;
     text-align: center;
@@ -222,47 +291,46 @@ h2 {
   }
 
   .section:hover .bg-minecraft {
-      transform: translateY(15px);
+    transform: translateY(15px);
   }
 }
 
 .bg-telenor {
-  background-image: url(src/phones2.jpg);
+  background-image: url(../src/phones2.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-volvo {
   background-color: black;
-  color: #DBDBDB;
+  color: #dbdbdb;
   position: relative;
   overflow: hidden;
-
 }
 
 .section-volvo-bg {
-    position: absolute;
-    /* background-image: url(src/clock2.svg); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 95%;
-    bottom: -100px;
-    /* opacity: 0.2; */
+  position: absolute;
+  /* background-image: url(src/clock2.svg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 95%;
+  bottom: -100px;
+  /* opacity: 0.2; */
 }
 
 .section-volvo-bg-left {
-    background-image: url(src/clock2.svg);
-    background-position: left;
-    left: -25%;
-    transition: transform 0.3s ease-out;
+  background-image: url(../src/clock2.svg);
+  background-position: left;
+  left: -25%;
+  transition: transform 0.3s ease-out;
 }
 
 .section-volvo-bg-right {
-    background-image: url(src/clock3.svg);
-    background-position: right;
-    right: -25%;
-    transition: transform 0.3s ease-out;
+  background-image: url(../src/clock3.svg);
+  background-position: right;
+  right: -25%;
+  transition: transform 0.3s ease-out;
 }
 
 @media (max-width: 918px) {
@@ -276,7 +344,7 @@ h2 {
   }
 
   .section:hover .section-volvo-bg-left {
-      transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 
   .section-volvo-bg-right {
@@ -290,32 +358,43 @@ h2 {
 }
 
 .bg-codepub {
-  background-image: url(src/codepub.png);
+  background-image: url(../src/codepub.png);
   background-position: center;
   background-size: cover;
 }
 
 .bg-nl {
-  background-image: url(src/boids.svg);
+  background-image: url(../src/boids.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 80%;
 }
 
 .section-title {
-  font-weight: 900;
-  letter-spacing: 1px;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
   font-size: 40px;
 }
 
+@media (max-width: 395px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
 .section-title-link {
-  color: #2B2B2B;
+  color: #2b2b2b;
   text-decoration: none;
   cursor: default;
 }
 
 .section-title-link:hover {
-  color: #F2440D;
+  color: #f2440d;
+}
+
+.section-title-game {
+  font-family: "Lilita One", sans-serif;
+  font-size: 60px;
 }
 
 .section-subtitle {
@@ -331,9 +410,9 @@ h2 {
   text-align: left;
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .bg-nl {
-    background-image: url(src/boid.svg);
+    background-image: url(../src/boid.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -354,7 +433,7 @@ h2 {
 }
 
 .section-description {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
 }
 
@@ -393,12 +472,12 @@ h2 {
 
 .email-link {
   text-decoration: none;
-  cursor: default;
-  color: #F2440D;
+  /* cursor: default; */
+  color: #f2440d;
 }
 
 .email-link:hover {
-  color: #FF8A53;
+  color: #ff8a53;
 }
 
 .the-end {
@@ -414,23 +493,42 @@ h2 {
 }
 
 .arrow {
-    padding-left: 8px;
-    transition: transform 0.3s ease-out;
+  font-size: 26px;
+  padding-left: 8px;
+  transition: transform 0.3s ease-out;
+  margin: 0;
+}
+
+@media (max-width: 380px) {
+  .arrow {
+    animation: arrow-bounce 0.6s infinite;
+  }
+}
+
+@keyframes arrow-bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .button {
   visibility: hidden;
   font-size: 20px;
-  font-family: 'Muli', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  cursor: default;
+  /* cursor: default; */
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .button {
     visibility: visible;
     font-size: 18px;
@@ -450,7 +548,7 @@ h2 {
 }
 
 .button-volvo {
-  color: #DBDBDB;
+  color: #dbdbdb;
 }
 
 .button-TCP {
@@ -458,5 +556,5 @@ h2 {
 }
 
 .button-nl {
-  color: #2C3F6B;
+  color: #2c3f6b;
 }
