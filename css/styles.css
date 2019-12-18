@@ -1,0 +1,614 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: #2b2b2b;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  margin: 14px 0;
+}
+.me {
+  margin-bottom: 16px;
+  margin-top: 32px;
+  font-size: 11px;
+  border-radius: 130px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 1px;
+  max-width: 80%;
+  z-index: 999;
+}
+
+.wrapper-header-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .wrapper-header {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 592px) {
+  .wrapper-header {
+    max-width: 80%;
+  }
+}
+
+.wrapper-epidemic {
+  max-width: 45%;
+  margin-left: 10%;
+  color: #293138;
+  text-align: left;
+}
+
+.wrapper-game {
+  color: #ee4e91;
+  /* color: #0b83b7; */
+}
+
+.button-game {
+  color: #ee4e91;
+}
+
+.wrapper-minecraft {
+  max-width: 45%;
+  margin-right: 10%;
+  color: #293138;
+  text-align: left;
+}
+
+.wrapper-telenor {
+  max-width: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 570px) {
+  .wrapper-telenor {
+    max-width: 80%;
+  }
+}
+
+.wrapper-volvo {
+  max-width: 736px;
+  padding-bottom: 204px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-TCP {
+  max-width: 736px;
+  margin-bottom: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 918px) {
+  .wrapper-TCP {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper-TCP {
+    margin-bottom: 27%;
+  }
+}
+
+.wrapper-nl {
+  max-width: 45%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  color: #2c3f6b;
+  text-align: left;
+}
+
+.section {
+  position: relative;
+  min-height: 80vh;
+  max-width: 1240px;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  cursor: default;
+  overflow: hidden;
+}
+
+/* .section-footer {
+  background-image: url(../src/me2.jpg);
+  background-size: 120%;
+  background-position: -20% 0;
+} */
+
+.section-minecraft {
+  background-color: #f3b000;
+}
+
+.section-epidemic {
+  background-color: #fb6f10;
+}
+
+.section-nl {
+  background-color: #f5f5f5;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: transform 0.3s ease-out;
+}
+
+.cow-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  transition: transform 0.3s ease-out;
+}
+
+.section:hover .cow-container {
+  transform: scale(1.06);
+}
+
+.section:focus .cow-container {
+  transform: scale(1.06);
+}
+
+.cow-position {
+  margin-top: 5%;
+  position: relative;
+}
+
+.section-game {
+  background-color: #c3eabd;
+}
+
+.section:focus .bg {
+  transform: scale(1.06);
+}
+
+.section:hover .section-volvo-bg-left {
+  transform: translateX(30px);
+}
+
+.section:hover .section-volvo-bg-right {
+  transform: translateX(-30px);
+}
+
+@media (min-width: 1240px) {
+  .section {
+    margin-bottom: 40px;
+  }
+}
+
+.section-header {
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 0;
+  min-height: 90vh;
+}
+
+.bg-epidemic {
+  background-image: url(../src/epidemicsound.png);
+  background-size: auto 100%;
+  background-position: right;
+}
+
+@media (max-width: 890px) {
+  .bg-epidemic {
+    background-image: url(../src/epidemicsound-small.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    bottom: -60%;
+    right: -50%;
+  }
+}
+
+@media (max-width: 760px) {
+  .section-epidemic {
+    justify-content: start;
+  }
+  .wrapper-epidemic {
+    max-width: 80%;
+    padding-top: 6%;
+  }
+}
+
+@media (max-width: 630px) {
+  .bg-epidemic {
+    bottom: -30%;
+    right: -10%;
+    background-size: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bg-epidemic {
+    bottom: -70%;
+  }
+}
+
+.bg-minecraft {
+  background-image: url(../src/gameboy-yellow2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10%;
+}
+
+.section:hover .bg-minecraft {
+  transform: translateY(-15px);
+}
+
+@media (max-width: 1020px) {
+  .bg-minecraft {
+    background-image: url(../src/gameboy-yellow-bottom.jpg);
+    background-position: top;
+    top: -20px;
+    text-align: center;
+  }
+
+  .wrapper-minecraft {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section:hover .bg-minecraft {
+    transform: translateY(15px);
+  }
+}
+
+.bg-telenor {
+  background-image: url(../src/phones2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.section-volvo {
+  background-color: black;
+  color: #dbdbdb;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-volvo-bg {
+  position: absolute;
+  /* background-image: url(src/clock2.svg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 95%;
+  bottom: -100px;
+  /* opacity: 0.2; */
+}
+
+.section-volvo-bg-left {
+  background-image: url(../src/clock2.svg);
+  background-position: left;
+  left: -25%;
+  transition: transform 0.3s ease-out;
+}
+
+.section-volvo-bg-right {
+  background-image: url(../src/clock3.svg);
+  background-position: right;
+  right: -25%;
+  transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 918px) {
+  .section-volvo-bg-left {
+    width: 80%;
+    bottom: -45%;
+    background-position: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .section:hover .section-volvo-bg-left {
+    transform: translateY(-15px);
+  }
+
+  .section-volvo-bg-right {
+    display: none;
+  }
+
+  .wrapper-volvo {
+    max-width: 80%;
+    padding-bottom: 204px;
+  }
+}
+
+.bg-codepub {
+  background-image: url(../src/codepub.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-nl {
+  background-image: url(../src/boids.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
+.section-title {
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  font-size: 40px;
+}
+
+.section-title-game {
+  font-family: "Lilita One", sans-serif;
+  font-size: 45px;
+}
+
+@media (max-width: 395px) {
+  .section-title {
+    font-size: 30px;
+  }
+  .section-title-game {
+    font-size: 35px;
+  }
+}
+
+.section-title-link {
+  color: #2b2b2b;
+  text-decoration: none;
+  cursor: default;
+}
+
+.section-title-link:hover {
+  color: #f2440d;
+}
+
+.section-subtitle {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.section-subtitle-telenor {
+  color: black;
+}
+
+.section-text-nl {
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .bg-nl {
+    background-image: url(../src/boid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .section-text-nl {
+    text-align: center;
+  }
+
+  .wrapper-nl {
+    max-width: 80%;
+    margin-left: auto;
+    margin-top: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.section-description {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .section {
+    min-height: 60vh;
+  }
+
+  .section-header {
+    min-height: 80vh;
+  }
+
+  .section-footer {
+    min-height: 80vh;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+}
+
+.section-things {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.section-things-text {
+  margin: 16px;
+  font-weight: 400;
+}
+
+.the-end {
+  position: relative;
+  margin: 0;
+  bottom: 0;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.section:hover .button {
+  visibility: visible;
+}
+
+.section:focus .button {
+  visibility: visible;
+}
+
+.arrow {
+  font-size: 26px;
+  padding-left: 8px;
+  transition: transform 0.3s ease-out;
+  margin: 0;
+}
+.email-arrow {
+  visibility: hidden;
+  padding-right: 14px;
+  color: #ff8a53;
+}
+
+.email-arrow-reverse {
+  padding-left: 14px;
+}
+
+.email-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /* cursor: default; */
+  color: #f2440d;
+}
+
+.email-link:hover {
+  color: #ff8a53;
+}
+
+.email-link:hover .email-arrow {
+  transform: translateX(6px);
+  visibility: visible;
+}
+
+.email-link:hover .email-arrow-reverse {
+  transform: translateX(-6px);
+  visibility: visible;
+}
+
+@media (max-width: 410px) {
+  .arrow {
+    animation: arrow-bounce 0.6s infinite;
+  }
+  /* .email-arrow {
+    visibility: visible;
+  } */
+  .email-arrow-reverse {
+    padding-left: 6px;
+  }
+  .arrow-reverse-anim {
+    animation: arrow-bounce-reverse 0.6s infinite;
+  }
+}
+
+@keyframes arrow-bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes arrow-bounce-reverse {
+  0% {
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(6px);
+  }
+}
+
+.button {
+  visibility: hidden;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  /* cursor: default; */
+}
+
+@media (max-width: 500px) {
+  .button {
+    visibility: visible;
+    font-size: 18px;
+  }
+}
+
+.button:hover .arrow {
+  transform: translateX(6px);
+}
+
+.button-minecraft-epidemic {
+  color: #293138;
+}
+
+.button-telenor {
+  color: black;
+}
+
+.button-volvo {
+  color: #dbdbdb;
+}
+
+.button-TCP {
+  color: white;
+}
+
+.button-nl {
+  color: #2c3f6b;
+}
