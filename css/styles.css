@@ -236,9 +236,11 @@ p {
 }
 
 .bg-epidemic {
-  background-image: url(../src/epidemicsound.png);
-  background-size: auto 100%;
+  background-image: url(../src/epidemicsound-small.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: right;
+  right: -10%;
 }
 
 @media (max-width: 890px) {
