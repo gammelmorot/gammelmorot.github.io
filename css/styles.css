@@ -259,7 +259,7 @@ p {
   }
   .wrapper-epidemic {
     max-width: 80%;
-    padding-top: 6%;
+    margin-top: 6%;
   }
 }
 
@@ -273,7 +273,10 @@ p {
 
 @media (max-width: 500px) {
   .bg-epidemic {
-    bottom: -70%;
+    bottom: -122%;
+  }
+  .wrapper-epidemic {
+    margin-top: 14%;
   }
 }
 
@@ -463,7 +466,7 @@ p {
   }
 
   .section-header {
-    min-height: 80vh;
+    min-height: 90vh;
   }
 
   .section-footer {
