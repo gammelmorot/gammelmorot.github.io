@@ -67,6 +67,7 @@ p {
 }
 
 .wrapper-game {
+  margin-top: 5%;
   color: #ee4e91;
   /* color: #0b83b7; */
 }
@@ -192,7 +193,7 @@ p {
 }
 
 .cow-position {
-  margin-top: 5%;
+  margin: 5% 0;
   position: relative;
 }
 
