@@ -306,8 +306,8 @@ p {
     margin-top: 27%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /* align-items: center;
+    text-align: center; */
   }
 
   .section:hover .bg-minecraft {
