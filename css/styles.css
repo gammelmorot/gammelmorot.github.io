@@ -554,7 +554,47 @@ p {
   visibility: visible;
 }
 
-@media (max-width: 410px) {
+.button {
+  visibility: hidden;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  /* cursor: default; */
+}
+
+.button:hover .arrow {
+  transform: translateX(6px);
+}
+
+.button-minecraft-epidemic {
+  color: #293138;
+}
+
+.button-telenor {
+  color: black;
+}
+
+.button-volvo {
+  color: #dbdbdb;
+}
+
+.button-TCP {
+  color: white;
+}
+
+.button-nl {
+  color: #2c3f6b;
+}
+
+@media (max-width: 430px) {
+  .button {
+    visibility: visible;
+    font-size: 18px;
+  }
+
   .arrow {
     animation: arrow-bounce 0.6s infinite;
   }
@@ -591,46 +631,4 @@ p {
   100% {
     transform: translateX(6px);
   }
-}
-
-.button {
-  visibility: hidden;
-  font-size: 20px;
-  font-weight: 400;
-  text-decoration: none;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  /* cursor: default; */
-}
-
-@media (max-width: 500px) {
-  .button {
-    visibility: visible;
-    font-size: 18px;
-  }
-}
-
-.button:hover .arrow {
-  transform: translateX(6px);
-}
-
-.button-minecraft-epidemic {
-  color: #293138;
-}
-
-.button-telenor {
-  color: black;
-}
-
-.button-volvo {
-  color: #dbdbdb;
-}
-
-.button-TCP {
-  color: white;
-}
-
-.button-nl {
-  color: #2c3f6b;
 }
