@@ -162,15 +162,6 @@ p {
   background-color: #f5f5f5;
 }
 
-.bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  transition: transform 0.3s ease-out;
-}
-
 .cow-container {
   display: flex;
   align-items: center;
@@ -195,7 +186,23 @@ p {
   background-color: #c3eabd;
 }
 
-.section:focus .bg {
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.bg-anim {
+  transition: transform 0.3s ease-out;
+}
+
+.section:hover .bg-anim {
+  transform: scale(1.06);
+}
+
+.section:focus .bg-anim {
   transform: scale(1.06);
 }
 
@@ -292,6 +299,7 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 10%;
+  transition: transform 0.3s ease-out;
 }
 
 .section:hover .bg-minecraft {
