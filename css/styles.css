@@ -540,7 +540,7 @@ p {
   padding-left: 14px;
 }
 
-.email-link {
+.link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -548,16 +548,16 @@ p {
   color: #f2440d;
 }
 
-.email-link:hover {
+.link:hover {
   color: #ff8a53;
 }
 
-.email-link:hover .email-arrow {
+.link:hover .email-arrow {
   transform: translateX(6px);
   visibility: visible;
 }
 
-.email-link:hover .email-arrow-reverse {
+.link:hover .email-arrow-reverse {
   transform: translateX(-6px);
   visibility: visible;
 }
