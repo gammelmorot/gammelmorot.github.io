@@ -59,6 +59,12 @@ p {
   }
 }
 
+.wrapper-acast {
+  max-width: 45%;
+  margin-right: 10%;
+  color: #dbdbdb;
+  text-align: left;
+}
 .wrapper-epidemic {
   max-width: 45%;
   margin-left: 10%;
@@ -154,6 +160,10 @@ p {
   background-color: #f3b000;
 }
 
+.section-acast {
+  background-color: #020A12;
+}
+
 .section-epidemic {
   background-color: #fb6f10;
 }
@@ -247,6 +257,14 @@ p {
   .section-footer {
     margin-bottom: -40px;
   }
+}
+
+.bg-acast {
+  background-image: url(../src/acast.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  right: -10%;
 }
 
 .bg-epidemic {
@@ -435,6 +453,11 @@ p {
   color: #f2440d;
 }
 
+.section-title-link:focus {
+  color: #f2440d;
+  outline: none;
+}
+
 .section-subtitle {
   font-weight: 300;
   font-size: 20px;
@@ -533,7 +556,7 @@ p {
 .email-arrow {
   visibility: hidden;
   padding-right: 14px;
-  color: #ff8a53;
+  color: #f2440d;
 }
 
 .email-arrow-reverse {
@@ -545,19 +568,20 @@ p {
   align-items: center;
   text-decoration: none;
   /* cursor: default; */
+  color: #2b2b2b;
+}
+
+.link:hover, .link:focus {
   color: #f2440d;
+  outline: none;
 }
 
-.link:hover {
-  color: #ff8a53;
-}
-
-.link:hover .email-arrow {
+.link:focus .email-arrow {
   transform: translateX(6px);
   visibility: visible;
 }
 
-.link:hover .email-arrow-reverse {
+.link:focus .email-arrow-reverse {
   transform: translateX(-6px);
   visibility: visible;
 }
@@ -585,7 +609,7 @@ p {
   color: black;
 }
 
-.button-volvo {
+.button-volvo-acast {
   color: #dbdbdb;
 }
 
