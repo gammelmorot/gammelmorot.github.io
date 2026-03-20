@@ -71,7 +71,12 @@ p {
   color: #293138;
   text-align: left;
 }
-
+.wrapper-arc {
+  max-width: 45%;
+  margin-left: 10%;
+  color: #F2E9D3;
+  text-align: left;
+}
 .wrapper-game {
   margin-top: 5%;
   color: #ee4e91;
@@ -94,7 +99,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: black;
 }
 
 @media (max-width: 570px) {
@@ -162,6 +167,19 @@ p {
 
 .section:focus {
   outline: none;
+}
+
+.section-arc {
+  background-image: url(../src/ARC-background.png);
+  background-size: cover;
+}
+
+.section-title-arc {
+  background-image: url(../src/arcraiderstext.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 218px;
+  height: 100px;
 }
 
 .section-minecraft {
@@ -265,14 +283,34 @@ p {
   min-height: 90vh;
 }
 
+.section-header-links {
+  display: flex;
+  align-items: left;
+  width: 100%;
+  gap: 8px;
+  margin: 0;
+}
+
+.section-header-links a:not(:last-child) {
+  padding-right: 8px;
+  border-right: 1px solid black;
+}
+
 .section-footer {
   min-height: 90vh;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 1240px) {
   .section-footer {
     margin-bottom: -40px;
   }
+}
+
+.bg-arc {
+  background-image: url(../src/ARC-lines.png);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .bg-acast {
@@ -325,6 +363,10 @@ p {
     max-width: 80%;
     margin-top: 6%;
   }
+  .wrapper-arc {
+    max-width: 80%;
+    margin-top: 6%;
+  }
   .section-acast {
     justify-content: start;
   }
@@ -351,6 +393,9 @@ p {
     bottom: -122%;
   }
   .wrapper-epidemic {
+    margin-top: 14%;
+  }
+  .wrapper-arc {
     margin-top: 14%;
   }
 }
@@ -467,14 +512,14 @@ p {
 }
 
 .section-title {
-  font-weight: 600;
+  font-weight: 800;
   /* letter-spacing: 1px; */
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .section-title-game {
   font-family: "Lilita One", sans-serif;
-  font-size: 45px;
+  font-size: 60px;
 }
 
 @media (max-width: 395px) {
@@ -490,6 +535,10 @@ p {
   color: #2b2b2b;
   text-decoration: none;
   cursor: default;
+  font-size: 80px;
+  font-weight: 800;
+  width: 100%;
+  text-align: left;
 }
 
 .section-title-link:hover {
@@ -502,7 +551,7 @@ p {
 }
 
 .section-subtitle {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
 }
 
@@ -537,8 +586,10 @@ p {
 }
 
 .section-description {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
+  text-align: left;
+  padding-bottom: 16px;
 }
 
 @media (max-width: 500px) {
@@ -571,7 +622,7 @@ p {
 
 .section-things-text {
   margin: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .the-end {
@@ -632,7 +683,7 @@ p {
 .button {
   visibility: hidden;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   display: inline-flex;
   flex-direction: row;
@@ -662,6 +713,10 @@ p {
 
 .button-volvo-acast {
   color: #dbdbdb;
+}
+
+.button-arc {
+  color: #F2E9D3;
 }
 
 .button-TCP {
