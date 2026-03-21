@@ -44,6 +44,7 @@ p {
   padding: 1px;
   max-width: 80%;
   z-index: 999;
+  align-items: left;
 }
 
 .wrapper-header-footer {
@@ -88,10 +89,6 @@ p {
   /* color: #0b83b7; */
 }
 
-.button-game {
-  color: #ee4e91;
-}
-
 .wrapper-minecraft {
   max-width: 45%;
   margin-right: 10%;
@@ -103,7 +100,6 @@ p {
   max-width: 456px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   color: var(--color-dark);
 }
 
@@ -118,7 +114,6 @@ p {
   padding-bottom: 204px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .wrapper-TCP {
@@ -126,7 +121,6 @@ p {
   margin-bottom: 7%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   color: var(--color-light);
 }
 
@@ -159,12 +153,11 @@ p {
   margin: auto;
   background-size: cover;
   background-position: center;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-decoration: none;
-  cursor: default;
   overflow: hidden;
   border: none;
   font-family: "Inter var", sans-serif;
@@ -337,7 +330,8 @@ p {
     bottom: -30%;
   }
   .wrapper-acast {
-    max-width: 80%;
+    max-width: 60%;
+    margin-left: 10%;
     margin-top: -30%;
   }
 }
@@ -422,7 +416,6 @@ p {
     background-image: url(../src/gameboy-yellow-bottom.jpg);
     background-position: top;
     top: -20px;
-    text-align: center;
   }
 
   .wrapper-minecraft {
@@ -432,8 +425,6 @@ p {
     margin-top: 27%;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    text-align: center; */
   }
 
   .section:hover .bg-minecraft {
@@ -442,7 +433,7 @@ p {
 }
 
 .bg-telenor {
-  background-image: url(../src/phones2.jpg);
+  background-image: url(../src/phones3.png);
   background-position: center;
   background-size: cover;
 }
@@ -500,6 +491,7 @@ p {
   .wrapper-volvo {
     max-width: 80%;
     padding-bottom: 204px;
+    align-items: left;
   }
 }
 
@@ -520,6 +512,7 @@ p {
   font-weight: 800;
   /* letter-spacing: 1px; */
   font-size: 60px;
+  width: 100%
 }
 
 .section-title-game {
@@ -577,7 +570,6 @@ p {
   }
 
   .section-text-nl {
-    text-align: center;
   }
 
   .wrapper-nl {
@@ -586,7 +578,6 @@ p {
     margin-top: 32%;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -666,7 +657,6 @@ p {
   display: flex;
   align-items: center;
   text-decoration: none;
-  /* cursor: default; */
   color: var(--color-dark);
 }
 
@@ -687,13 +677,18 @@ p {
 
 .button {
   visibility: hidden;
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: none;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  /* cursor: default; */
+  text-decoration: none;
+  padding: 4px 12px;
+  width: fit-content;
+}
+
+.button-text {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .button:hover .arrow {
@@ -709,19 +704,36 @@ p {
 }
 
 .button-light {
-  color: var(--color-light);
-}
-
-.button-dark {
+  background-color: var(--color-light);
   color: var(--color-dark);
 }
 
+.button-light:hover {
+  background-color: #c2c2c2;
+}
+
+.button-dark:hover {
+  background-color: #343434;
+}
+
+.button-dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.button-game {
+  background-color: #ee4e91;
+  color: var(--color-light);
+}
+
 .button-arc {
-  color: #F2E9D3;
+  background-color: #F2E9D3;
+  color: var(--color-dark);
 }
 
 .button-nl {
-  color: #2c3f6b;
+  background-color: #2c3f6b;
+  color: var(--color-light);
 }
 
 @media (max-width: 430px) {
