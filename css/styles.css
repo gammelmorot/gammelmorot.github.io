@@ -8,11 +8,16 @@ html {
   }
 }
 
+:root {
+  --color-light: #F5F5F5;
+  --color-dark: #1A1A1A;
+}
+
 body {
   background-color: white;
   margin: 0;
   padding: 0;
-  color: #2b2b2b;
+  color: var(--color-dark);
 }
 
 html {
@@ -62,13 +67,13 @@ p {
 .wrapper-acast {
   max-width: 45%;
   margin-right: 10%;
-  color: #dbdbdb;
+  color: var(--color-light);
   text-align: left;
 }
 .wrapper-epidemic {
   max-width: 45%;
   margin-left: 10%;
-  color: #293138;
+  color: var(--color-dark);
   text-align: left;
 }
 .wrapper-arc {
@@ -90,7 +95,7 @@ p {
 .wrapper-minecraft {
   max-width: 45%;
   margin-right: 10%;
-  color: #293138;
+  color: var(--color-dark);
   text-align: left;
 }
 
@@ -99,7 +104,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: black;
+  color: var(--color-dark);
 }
 
 @media (max-width: 570px) {
@@ -122,7 +127,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: var(--color-light);
 }
 
 @media (max-width: 918px) {
@@ -293,7 +298,7 @@ p {
 
 .section-header-links a:not(:last-child) {
   padding-right: 8px;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--color-dark);
 }
 
 .section-footer {
@@ -532,7 +537,7 @@ p {
 }
 
 .section-title-link {
-  color: #2b2b2b;
+  color: var(--color-dark);
   text-decoration: none;
   cursor: default;
   font-size: 80px;
@@ -556,7 +561,7 @@ p {
 }
 
 .section-subtitle-telenor {
-  color: black;
+  color: var(--color-dark);
 }
 
 .section-text-nl {
@@ -662,7 +667,7 @@ p {
   align-items: center;
   text-decoration: none;
   /* cursor: default; */
-  color: #2b2b2b;
+  color: var(--color-dark);
 }
 
 .link:hover, .link:focus {
@@ -703,24 +708,16 @@ p {
   outline: none;
 }
 
-.button-minecraft-epidemic {
-  color: #293138;
+.button-light {
+  color: var(--color-light);
 }
 
-.button-telenor {
-  color: black;
-}
-
-.button-volvo-acast {
-  color: #dbdbdb;
+.button-dark {
+  color: var(--color-dark);
 }
 
 .button-arc {
   color: #F2E9D3;
-}
-
-.button-TCP {
-  color: white;
 }
 
 .button-nl {
