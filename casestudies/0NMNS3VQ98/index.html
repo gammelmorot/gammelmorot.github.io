@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Viewer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #1a1a1a;
+      color: #fff;
+      font-family: sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #111;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 { font-size: 1.1rem; font-weight: 600; }
+
+    #controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    #controls button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    #controls button:hover { background: #444; }
+    #controls button:disabled { opacity: 0.3; cursor: default; }
+    #zoom-info { font-size: 0.9rem; color: #aaa; min-width: 45px; text-align: center; }
+
+    #page-info { font-size: 0.9rem; color: #aaa; }
+
+    #viewer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 16px;
+      gap: 16px;
+    }
+
+    #viewer canvas {
+      display: block;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+      max-width: 100%;
+    }
+
+    #loading {
+      margin-top: 80px;
+      color: #aaa;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PDF Viewer</h1>
+    <div id="controls">
+      <button id="prev">← Prev</button>
+      <span id="page-info">Page — of —</span>
+      <button id="next">Next →</button>
+      <button id="zoom-out">−</button>
+      <span id="zoom-info">100%</span>
+      <button id="zoom-in">+</button>
+    </div>
+  </header>
+
+  <div id="viewer">
+    <p id="loading">Loading PDF...</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    const PDF_URL   = 'portfolio.pdf'; // 👈 Replace with your PDF path
+    const START_PAGE = 1;                  // 👈 Page to open on
+
+    let pdfDoc = null;
+    let currentPage = START_PAGE;
+    let zoomLevel = 2;
+    const viewer = document.getElementById('viewer');
+    const loading = document.getElementById('loading');
+    const pageInfo = document.getElementById('page-info');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    const zoomInfo = document.getElementById('zoom-info');
+    const zoomInBtn = document.getElementById('zoom-in');
+    const zoomOutBtn = document.getElementById('zoom-out');
+
+    function renderPage(num) {
+      pdfDoc.getPage(num).then(page => {
+        const viewport = page.getViewport({ scale: zoomLevel });
+
+        let canvas = document.getElementById('pdf-canvas');
+        if (!canvas) {
+          canvas = document.createElement('canvas');
+          canvas.id = 'pdf-canvas';
+          loading.remove();
+          viewer.appendChild(canvas);
+        }
+
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise.then(() => {
+          pageInfo.textContent = `Page ${num} of ${pdfDoc.numPages}`;
+          zoomInfo.textContent = Math.round(zoomLevel * 100) + '%';
+          prevBtn.disabled = num <= 1;
+          nextBtn.disabled = num >= pdfDoc.numPages;
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    }
+
+    pdfjsLib.getDocument(PDF_URL).promise.then(doc => {
+      pdfDoc = doc;
+      renderPage(currentPage);
+    }).catch(() => {
+      loading.textContent = 'Failed to load PDF. Check the file path.';
+    });
+
+    prevBtn.addEventListener('click', () => { if (currentPage > 1) renderPage(--currentPage); });
+    nextBtn.addEventListener('click', () => { if (currentPage < pdfDoc.numPages) renderPage(++currentPage); });
+    zoomInBtn.addEventListener('click', () => { zoomLevel = Math.min(4, zoomLevel + 0.25); renderPage(currentPage); });
+    zoomOutBtn.addEventListener('click', () => { zoomLevel = Math.max(0.5, zoomLevel - 0.25); renderPage(currentPage); });
+  </script>
+
+</body>
+</html>
